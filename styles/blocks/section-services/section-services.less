@@ -1,0 +1,45 @@
+.section-services {
+  background-color: #eeeeee;
+  padding-top: 30px;
+
+  @media @screen-gt-m {
+    padding-top: 40px;
+  }
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 30px;
+
+  @media @screen-gt-s {
+    gap: 10px;
+    // высота в 100%, чтобы иконки корректно распологались по центру
+    // если вдруг будет какое-то большое описание у одного из сервисов
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  @media @screen-gt-m {
+    padding-bottom: 40px;
+    gap: 30px;
+  }
+
+  // .service-item__image
+  &__image {
+    width: 40px;
+    height: 40px;
+    display: block;
+
+    @media @screen-gt-m {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  // .service-item__description
+  &__description {
+    line-height: 1.4;
+  }
+}
