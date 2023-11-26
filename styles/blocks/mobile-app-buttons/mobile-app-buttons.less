@@ -1,0 +1,31 @@
+.mobile-app-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.mobile-app-button {
+  display: block;
+  text-decoration: none;
+  border: 1px solid #d4d7d9;
+  border-radius: 4px;
+  width: 140px;
+  height: 40px;
+  background-image: url(images/mobile-app-buttons.svg);
+  background-repeat: no-repeat;
+  background-size: 140px;
+  box-sizing: border-box;
+
+  &:hover {
+    border-color: #ffffff;
+  }
+
+  // .mobile-app-button_ios
+  &_ios {
+    background-position: 0 0px;
+  }
+  // .mobile-app-button_android
+  &_android {
+    background-position: 0 -40px;
+  }
+}
