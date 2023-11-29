@@ -8,26 +8,25 @@
     padding: 45px 0;
   }
 
-  // .footer__separator
+  &__logo {
+    display: none;
+
+    @media @screen-gt-m {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
   &__separator {
     background-color: #666666;
     height: 1px;
   }
-  // .footer__copyright
+
   &__copyright {
     margin-top: 30px;
   }
-  // .footer__statistic
+
   &__statistics {
     margin: 0;
-  }
-}
-
-.footer .logo_monochrome {
-  display: none;
-
-  @media @screen-gt-m {
-    display: flex;
-    justify-content: flex-end;
   }
 }
